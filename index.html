@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ShotSpark — Never stare at a blank timeline again</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="stage">
+    <header class="masthead">
+      <span class="tally"></span>
+      <span class="masthead-label">ShotSpark</span>
+    </header>
+
+    <h1 class="headline">Out of ideas for<br>today's upload?</h1>
+    <p class="subhead">Hit record. Get a format, a hook, and a twist — pick one up and go shoot it.</p>
+
+    <section class="slate" id="slate" aria-live="polite">
+      <div class="slate-empty" id="slateEmpty">
+        <p>Your next idea shows up here.</p>
+      </div>
+      <div class="slate-card" id="slateCard" hidden>
+        <div class="slate-row">
+          <span class="slate-tag" id="cardFormat"></span>
+          <button class="save-btn" id="saveBtn" aria-label="Save this idea">☆</button>
+        </div>
+        <p class="slate-hook" id="cardHook"></p>
+        <p class="slate-twist" id="cardTwist"></p>
+      </div>
+    </section>
+
+    <button class="spark-btn" id="sparkBtn">Spark an idea</button>
+
+    <section class="saved" id="savedSection" hidden>
+      <div class="saved-header">
+        <h2>Saved ideas</h2>
+        <button class="clear-btn" id="clearBtn">Clear all</button>
+      </div>
+      <ul class="saved-list" id="savedList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
