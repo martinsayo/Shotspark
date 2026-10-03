@@ -226,6 +226,26 @@ html, body {
   flex-shrink: 0;
 }
 
+.watermark {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  font-size: 12px;
+  color: var(--text-dim);
+  opacity: 0.75;
+}
+
+.watermark a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.watermark a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 480px) {
   .headline { font-size: 30px; }
 }
